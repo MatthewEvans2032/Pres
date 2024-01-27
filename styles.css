@@ -38,24 +38,22 @@ body {
     margin-bottom: 10px;
 }
 
-.district-content > div {
-    flex-basis: 33%;
+.district-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.list-container, .map-container {
+    flex-basis: calc(33% - 20px);
+    text-align: center;
 }
 
 .district-map {
     width: 100%;
     max-width: 300px;
     height: auto;
-}
-
-.district-list {
-    list-style-type: disc;
-    margin: 0;
-    padding: 0 15px;
-    max-width: 200px;
+    margin-bottom: 10px;
 }
 
 header {

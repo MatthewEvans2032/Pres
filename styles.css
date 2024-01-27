@@ -1,3 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('lexington-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.email-banner {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.email-banner a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-banner a:hover {
+    text-decoration: underline;
+}
+
+.profile-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.district-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.district-image {
+    flex: 1 1 100%;
+    max-width: 25%;
+    height: auto;
+    margin: 5px;
+}
+
+header {
+    background-color: rgba(0, 71, 171, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+section p {
+    font-weight: bold;
+    text-align: left;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.initiative-list p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+a {
+    color: #0047ab;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+.table-responsive th,
+.table-responsive td {
+    font-weight: bold;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-responsive th {
+    background-color: #0047ab;
+    color: white;
+}
+
+.table-responsive td {
+    color: #333;
+}
+
 @media screen and (max-width: 768px) {
     .district-image-container {
         display: block;
@@ -13,38 +120,28 @@
         border-collapse: collapse;
     }
 
-    .table-responsive th,
-    .table-responsive td {
-        display: block;
-        text-align: center;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
     .table-responsive th {
         background-color: #0047ab;
         color: white;
         padding: 10px;
+        display: block;
+        text-align: center;
     }
 
     .table-responsive td {
-        border-bottom: 0;
-        position: relative;
-        padding-left: 20px;
-        padding-top: 0;
-        padding-bottom: 10px;
+        /* Make table data block for stacking and full width */
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 10px; /* Space above the content */
+        text-align: left; /* Align the text to the left */
+        padding-left: 20px; /* Padding inside the cell */
+        padding-right: 20px; /* Padding inside the cell */
+        border-bottom: 1px solid #ddd; /* Border for separation */
     }
 
     .table-responsive td::before {
-        content: attr(data-label);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding-left: 20px;
-        font-weight: bold;
-        background-color: #0047ab;
-        color: white;
-        padding: 10px;
+        /* Hide the data-label */
+        content: none;
     }
 }

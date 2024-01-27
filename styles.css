@@ -132,22 +132,19 @@ a:visited {
         background-color: #0047ab;
         color: white;
         padding: 10px;
+        text-align: center;
     }
 
     .table-responsive td {
-        border-bottom: 1px solid #ddd;
-        padding-left: 20px; /* Adjust padding as needed */
+        border-bottom: 0;
         position: relative;
-        margin-left: 0;
-        padding-top: 20px;
+        padding-left: 20px;
+        padding-top: 0;
+        padding-bottom: 10px;
     }
 
-    .table-responsive td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 20px; /* Adjust as needed */
-        top: 0;
-        font-weight: bold;
-        padding-right: 10px;
+    .table-responsive td::before {
+        /* Remove the content for mobile as we don't need the label */
+        content: none;
     }
 }

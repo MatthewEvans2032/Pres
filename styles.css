@@ -93,19 +93,18 @@ a:visited {
     color: #551a8b;
 }
 
-/* Styles for the table */
-table {
+/* Responsive Table Styles */
+.table-responsive {
+    display: block;
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    overflow-x: auto;
 }
 
 th, td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    white-space: nowrap;
 }
 
 th {
@@ -117,3 +116,20 @@ th {
 td {
     color: #333;
 }
+
+@media screen and (max-width: 768px) {
+    .district-image-container {
+        display: block;
+    }
+
+    .district-image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .table-responsive td {
+        white-space: normal;
+    }
+}
+
+/* Add more media queries and styles as needed for other elements */

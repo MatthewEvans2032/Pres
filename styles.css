@@ -88,12 +88,10 @@ a:visited {
     color: #551a8b;
 }
 
-.table-responsive {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
+.table-responsive th,
+.table-responsive td {
+    font-weight: bold; /* This will make the text in table headers and cells bold */
 }
-
 th, td {
     padding: 15px;
     text-align: left;

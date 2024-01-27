@@ -34,16 +34,16 @@ body {
 
 .district-image-container {
     display: flex;
-    flex-wrap: wrap; /* Allow images to wrap to the next line */
-    justify-content: center; /* Center the images */
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
 }
 
 .district-image {
-    flex: 1 1 100%; /* Flex grow, flex shrink, flex basis adjusted */
-    max-width: 25%; /* Adjust max width for each image */
+    flex: 1 1 100%;
+    max-width: 25%;
     height: auto;
-    margin: 5px; /* Add some margin around images */
+    margin: 5px;
 }
 
 header {
@@ -90,8 +90,9 @@ a:visited {
 
 .table-responsive th,
 .table-responsive td {
-    font-weight: bold; /* This will make the text in table headers and cells bold */
+    font-weight: bold;
 }
+
 th, td {
     padding: 15px;
     text-align: left;
@@ -117,6 +118,11 @@ td {
     .district-image {
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    .table-responsive {
+        overflow-x: auto; /* Enables horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
     }
 
     .table-responsive td {

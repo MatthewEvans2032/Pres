@@ -120,21 +120,25 @@ td {
         margin-bottom: 10px;
     }
 
-    .table-responsive {
+    .table-responsive table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        display: block;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
     }
 
-    .table-responsive table,
-    .table-responsive thead,
-    .table-responsive tbody,
-    .table-responsive th,
-    .table-responsive td,
-    .table-responsive tr {
+    .table-responsive thead {
+        display: none; /* Hide the table headers in mobile view */
+    }
+
+    .table-responsive tbody tr {
         display: block;
+        margin-bottom: 10px;
     }
 
     .table-responsive td {
+        display: block; /* Stack the cells vertically */
         text-align: right;
         padding-left: 50%; /* Adjust as needed */
         position: relative;

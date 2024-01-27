@@ -1,7 +1,7 @@
-
 # netlify.toml
+
 [build]
-  publish = "/
+  publish = "."  # Publish the root directory
   command = "echo 'No build command'"
 
 [[redirects]]

@@ -121,11 +121,32 @@ td {
     }
 
     .table-responsive {
-        overflow-x: auto; /* Enables horizontal scrolling */
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive table,
+    .table-responsive thead,
+    .table-responsive tbody,
+    .table-responsive th,
+    .table-responsive td,
+    .table-responsive tr {
+        display: block;
     }
 
     .table-responsive td {
-        white-space: normal;
+        text-align: right;
+        padding-left: 50%; /* Adjust as needed */
+        position: relative;
+    }
+
+    .table-responsive td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%; /* Adjust as needed */
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
     }
 }

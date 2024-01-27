@@ -45,11 +45,6 @@ body {
     animation: scroll 20s linear infinite;
 }
 
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-25%); } /* Adjust based on the number of images */
-}
-
 .district-image {
     width: 25%; /* Adjust as per the number of images */
     height: auto;

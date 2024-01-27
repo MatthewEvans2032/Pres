@@ -88,34 +88,21 @@ a:visited {
     color: #551a8b;
 }
 
-/* New Styles for Mobile View Without Table */
-.info-section {
-    background-color: #f8f8f8;
-    margin: 10px 5px;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.table-responsive th,
+.table-responsive td {
+    font-weight: bold;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-.info-header {
+.table-responsive th {
     background-color: #0047ab;
     color: white;
-    padding: 10px;
-    margin: -10px -10px 10px -10px; /* Align the header with the edge of the section */
-    border-radius: 4px 4px 0 0;
 }
 
-.info-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.info-section li {
-    background-color: white;
-    margin: 5px 0;
-    padding: 5px 10px;
-    border-radius: 4px;
+.table-responsive td {
+    color: #333;
 }
 
 @media screen and (max-width: 768px) {
@@ -128,8 +115,39 @@ a:visited {
         margin-bottom: 10px;
     }
 
-    /* Hide the table on mobile and use divs instead */
+    /* Hide the table and display the mobile layout */
     .table-responsive {
         display: none;
+    }
+
+    .mobile-info-section {
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        margin: 10px 5px;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .mobile-info-header {
+        background-color: #0047ab;
+        color: white;
+        padding: 10px;
+        margin: -10px -10px 10px -10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .mobile-info-section ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-info-section li {
+        background-color: white;
+        margin: 5px 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-align: left;
     }
 }

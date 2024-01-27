@@ -105,3 +105,14 @@ a {
 a:visited {
     color: #551a8b;
 }
+
+.district-list {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0 auto; /* Centers the list */
+    text-align: left;
+}
+
+.district-list li {
+    font-weight: bold; /* Makes list text bold */
+}

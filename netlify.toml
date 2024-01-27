@@ -1,0 +1,10 @@
+
+# netlify.toml
+[build]
+  publish = "C:\Users\Matt\Documents\GitHub\pres2032/"
+  command = "echo 'No build command'"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

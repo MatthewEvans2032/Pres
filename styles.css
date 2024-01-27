@@ -40,21 +40,12 @@ body {
 }
 
 .district-image {
-    flex: 1 0 auto; /* Flex grow, flex shrink, flex basis */
-    width: auto; /* Adjust width automatically */
-    max-width: 100%; /* Limit max width to prevent overflow */
+    flex: 1 1 100%; /* Flex grow, flex shrink, flex basis adjusted */
+    max-width: 25%; /* Adjust max width for each image */
+    height: auto;
     margin: 5px; /* Add some margin around images */
 }
 
-@media screen and (max-width: 768px) {
-    .district-image-container {
-        display: block; /* Stack images vertically on smaller screens */
-    }
-
-    .district-image {
-        width: 100%; /* Full width for each image */
-        margin-bottom: 10px; /* Add space between stacked images */
-    }
 header {
     background-color: rgba(0, 71, 171, 0.8);
     color: white;
@@ -97,7 +88,6 @@ a:visited {
     color: #551a8b;
 }
 
-/* Responsive Table Styles */
 .table-responsive {
     display: block;
     width: 100%;
@@ -135,5 +125,3 @@ td {
         white-space: normal;
     }
 }
-
-/* Additional Media Queries and Responsive Styles as Needed */

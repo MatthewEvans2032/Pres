@@ -12,29 +12,43 @@ body {
     height: auto;
     border-radius: 50%;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 header {
-    background-color: rgba(0, 71, 171, 0.8); /* semi-transparent overlay */
-    color: white;
-    text-align: center;
-    padding: 40px 0;
-}
-
-h1, h2 {
-    margin: 0 0 10px 0;
-}
-
-section {
-    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white for readability */
-    padding: 20px;
-    margin: 20px 0;
-}
-
-footer {
-    background-color: rgba(51, 51, 51, 0.8); /* semi-transparent footer */
+    background-color: rgba(0, 71, 171, 0.8);
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+a {
+    color: #0047ab;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

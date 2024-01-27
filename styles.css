@@ -34,17 +34,27 @@ body {
 
 .district-image-container {
     display: flex;
-    overflow-x: hidden;
-    white-space: nowrap;
-    animation: scroll 20s linear infinite;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center the images */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
 }
 
 .district-image {
-    width: 25%;
-    height: auto;
-    margin-right: 10px;
+    flex: 1 0 auto; /* Flex grow, flex shrink, flex basis */
+    width: auto; /* Adjust width automatically */
+    max-width: 100%; /* Limit max width to prevent overflow */
+    margin: 5px; /* Add some margin around images */
 }
 
+@media screen and (max-width: 768px) {
+    .district-image-container {
+        display: block; /* Stack images vertically on smaller screens */
+    }
+
+    .district-image {
+        width: 100%; /* Full width for each image */
+        margin-bottom: 10px; /* Add space between stacked images */
+    }
 header {
     background-color: rgba(0, 71, 171, 0.8);
     color: white;

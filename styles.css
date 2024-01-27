@@ -32,12 +32,24 @@ body {
     margin: 20px auto;
 }
 
+.district-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .district-map {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
-    display: block;
-    margin: 20px auto;
+}
+
+.district-list {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 15px;
+    max-width: 200px;
 }
 
 header {

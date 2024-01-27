@@ -121,36 +121,25 @@ td {
     }
 
     .table-responsive table {
-        border-collapse: collapse;
-        border-spacing: 0;
         width: 100%;
-        display: block;
-        overflow-x: auto;
+        border-collapse: collapse;
     }
 
-    .table-responsive thead {
-        display: none; /* Hide the table headers in mobile view */
+    .table-responsive th,
+    .table-responsive td {
+        display: block; /* Stack the cells vertically */
     }
 
-    .table-responsive tbody tr {
-        display: block;
-        margin-bottom: 10px;
+    .table-responsive th {
+        background-color: #0047ab;
+        color: white;
+        padding: 10px;
+        text-align: center;
     }
 
     .table-responsive td {
-        display: block; /* Stack the cells vertically */
-        text-align: right;
-        padding-left: 50%; /* Adjust as needed */
-        position: relative;
-    }
-
-    .table-responsive td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0;
-        width: 50%; /* Adjust as needed */
-        padding-left: 15px;
-        font-weight: bold;
         text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
     }
 }

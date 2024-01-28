@@ -54,17 +54,17 @@ section {
 .info-image-section {
     padding: 10px;
     text-align: center;
-    overflow: hidden;
     max-width: 100%;
+    box-sizing: border-box;
 }
 
 .info-image {
-    width: calc(33.333% - 28px); /* Adjust for margin and border */
+    width: calc(33.333% - 24px); /* Adjust width considering margin and border */
     margin: 10px;
-    border: 4px solid black;
+    border: 2px solid black; /* Adding border to each image */
     display: inline-block;
     vertical-align: top;
-    box-sizing: border-box; /* Include padding and border in width */
+    box-sizing: border-box;
 }
 
 /* Styles for District Images */
@@ -73,7 +73,6 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0;
-    overflow: hidden;
     max-width: 100%;
 }
 
@@ -127,8 +126,8 @@ footer {
 /* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
     .info-image {
-        width: calc(100% - 20px); /* Full width on mobile minus horizontal margins */
-        margin: 10px 0; /* Adjust margin for mobile */
+        width: calc(100% - 24px); /* Full width on mobile minus margins */
+        margin: 10px; /* Adjust margin for mobile */
         display: block; /* Stack images vertically */
         box-sizing: border-box;
     }

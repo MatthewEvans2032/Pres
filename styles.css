@@ -124,17 +124,17 @@ footer {
     margin-right: 5px;
 }
 
-/* Removed bullets and aligned text for the action plan */
+/* Action Plan Styles */
 #initiatives ul {
     list-style-type: none;
     padding: 0;
-    text-align: left;
+    text-align: center; /* Center aligned text */
+    margin: 0 auto; /* Centered within section */
 }
 
 #initiatives ul li {
-    margin-bottom: 10px;
-    text-indent: -20px; /* Align text uniformly */
-    margin-left: 20px; /* Compensate for the text indent */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 15px; /* Spacing between points */
 }
 
 @media screen and (max-width: 768px) {

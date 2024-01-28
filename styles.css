@@ -64,7 +64,6 @@ section {
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
-    /* Removed border for a cleaner look */
 }
 
 /* Styles for District Images */
@@ -126,7 +125,7 @@ footer {
 /* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
     .info-image {
-        width: calc(100% - 24px); /* Full width on mobile minus margins */
+        width: calc(100% - 20px); /* Full width on mobile minus margins */
         margin: 10px; /* Adjust margin for mobile */
         display: block; /* Stack images vertically */
         box-sizing: border-box;

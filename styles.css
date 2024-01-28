@@ -58,7 +58,8 @@ section {
 .info-image {
     width: 100%;
     margin-bottom: 20px;
-    border: 3px solid black; /* Bold black outline around the images */
+    box-shadow: 0 0 0 3px black; /* Creates a 'border' effect that doesn't affect box size */
+    display: inline-block; /* Necessary for box-shadow to work properly */
 }
 
 /* Footer Styles */
@@ -98,6 +99,20 @@ footer {
     height: auto;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+/* District Images Styles */
+.district-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.district-image {
+    flex: 1 1 auto;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
 }
 
 /* Responsive Design for Mobile */

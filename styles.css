@@ -50,7 +50,7 @@ section {
     text-align: center;
 }
 
-/* Optimized Styles for About Me Images */
+/* Styles for About Me Images */
 .info-image-section {
     padding: 10px;
     text-align: center;
@@ -59,8 +59,9 @@ section {
 }
 
 .info-image {
-    width: calc(33.333% - 24px); /* Adjust width considering margin */
+    width: calc(33.333% - 24px); /* Adjust width considering margin and border */
     margin: 10px;
+    border: 2px solid black; /* Adding border to each image */
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
@@ -125,19 +126,26 @@ footer {
 /* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
     .info-image {
-        width: calc(100% - 20px); /* Full width on mobile minus margins */
+        width: calc(100% - 24px); /* Full width on mobile minus margins */
         margin: 10px; /* Adjust margin for mobile */
         display: block; /* Stack images vertically */
         box-sizing: border-box;
     }
 
-    .district-image-container {
-        display: block;
+    .district-image-container, .district-image, section, header, .email-banner, footer {
+        width: 100%; /* Expanding sections to full width */
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .district-image {
-        width: 100%; /* Full width on mobile */
+        width: 100%; /* Full width for district images on mobile */
         margin: 5px 0; /* Adjust margin for mobile */
-        box-sizing: border-box;
+    }
+
+    body, .email-banner, header, section, footer {
+        padding-left: 10px; /* Adding padding for consistency */
+        padding-right: 10px;
     }
 }

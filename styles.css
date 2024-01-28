@@ -132,4 +132,31 @@ footer {
         width: 100%;
         margin-bottom: 10px;
     }
+    .social-media-links {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media-links p {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media-links a {
+    color: #0047ab;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.social-media-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media-links img {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 }

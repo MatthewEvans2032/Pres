@@ -1,140 +1,57 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('lexington-background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.email-banner {
-    background-color: black;
-    color: yellow;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.email-banner a {
-    color: yellow;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.email-banner a:hover {
-    text-decoration: underline;
-}
-
-.profile-img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: rgba(0, 71, 171, 0.8);
+    background-color: #004a99;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
-h1, h2, p {
-    margin: 10px 0;
+header .email-banner {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 5px 0;
+    text-align: center;
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
     padding: 20px;
-    margin: 20px;
-    text-align: center;
+    background-color: white;
+    border-radius: 8px;
 }
 
-/* Optimized Styles for About Me Images */
-.info-image-section {
-    text-align: center;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.info-image {
-    width: calc(33.333% - 20px); /* Adjust width considering padding and margins */
-    margin: 10px;
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-}
-
-/* Styles for District Images */
-.district-image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-}
-
-.district-image {
-    flex: 1 1 auto;
-    max-width: calc(33.333% - 20px);
-    margin: 10px;
-    height: auto;
-    box-sizing: border-box;
-}
-
-/* Footer Styles */
 footer {
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: #004a99;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
-/* Social Media Link Styles */
-.social-media-links {
-    background-color: white;
-    padding: 20px 0;
-    border-top: 1px solid #ccc;
-}
-
-.social-media-links p {
-    color: #333;
-    display: inline;
-    margin-right: 10px;
+footer .email-banner {
+    background-color: #003366;
+    padding: 10px 0;
 }
 
 .social-media-links a {
-    color: #0047ab;
+    color: white;
     text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-.social-media-links a:hover {
-    text-decoration: underline;
+    padding: 10px;
 }
 
 .social-media-links img {
-    width: 24px;
-    height: auto;
-    vertical-align: middle;
     margin-right: 5px;
 }
 
-/* Responsive Design for Mobile */
-@media screen and (max-width: 768px) {
-    .info-image-section, .district-image-container, section, header, footer {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-    .info-image, .district-image {
-        width: 100%; /* Full width for mobile */
-        margin: 10px 0; /* Consistent vertical margin, no horizontal margin */
-    }
-
-    .profile-img, h1, h2, p {
-        width: auto; /* Auto width for text elements */
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+li {
+    margin-bottom: 10px;
 }

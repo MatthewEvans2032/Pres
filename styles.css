@@ -59,7 +59,7 @@ section {
 }
 
 .info-image {
-    width: calc(33.333% - 24px); /* Adjust width considering margin and border */
+    width: calc(25% - 24px); /* Reduced width for smaller images */
     margin: 10px;
     border: 2px solid black; /* Adding border to each image */
     display: inline-block;
@@ -78,7 +78,7 @@ section {
 
 .district-image {
     flex: 1 1 auto;
-    max-width: calc(33.333% - 10px);
+    max-width: calc(25% - 10px); /* Adjust width for smaller images */
     margin: 5px;
     height: auto;
     box-sizing: border-box;
@@ -126,7 +126,7 @@ footer {
 /* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
     .info-image {
-        width: calc(100% - 24px); /* Full width on mobile minus margins */
+        width: calc(50% - 24px); /* Smaller width on mobile */
         margin: 10px; /* Adjust margin for mobile */
         display: block; /* Stack images vertically */
         box-sizing: border-box;
@@ -137,7 +137,7 @@ footer {
     }
 
     .district-image {
-        width: 100%; /* Full width on mobile */
+        width: 50%; /* Smaller width on mobile */
         margin: 5px 0; /* Adjust margin for mobile */
         box-sizing: border-box;
     }

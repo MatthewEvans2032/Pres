@@ -32,6 +32,44 @@ body {
     margin: 20px auto;
 }
 
+.info-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.info-section h2 {
+    margin-bottom: 10px;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-section li {
+    background-color: white;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#background {
+    background: url('backgroundme.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#education {
+    background: url('eduexp.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#qualities {
+    background: url('qp.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 .district-image-container {
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +84,21 @@ body {
     margin: 5px;
 }
 
+@media screen and (max-width: 768px) {
+    .info-section {
+        margin: 10px 0;
+        padding: 20px;
+    }
+    
+    .district-image-container {
+        display: block;
+    }
+
+    .district-image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
 header {
     background-color: rgba(0, 71, 171, 0.8);
     color: white;

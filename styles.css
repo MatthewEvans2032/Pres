@@ -60,12 +60,11 @@ section {
 }
 
 .info-image {
-    width: 30%;
+    width: calc(33.333% - 20px); /* Adjust width and account for margin */
     margin: 10px;
     border: 4px solid black;
     display: inline-block;
     vertical-align: top;
-    max-width: calc(100% / 3 - 20px);
 }
 
 /* Styles for District Images */
@@ -80,10 +79,9 @@ section {
 
 .district-image {
     flex: 1 1 auto;
-    max-width: 30%;
+    max-width: calc(33.333% - 10px); /* Adjust width and account for margin */
     margin: 5px;
     height: auto;
-    max-width: calc(100% / 3 - 10px);
 }
 
 /* Footer Styles */
@@ -128,8 +126,9 @@ footer {
 /* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
     .info-image {
-        width: 100%;
-        margin-bottom: 10px;
+        width: 100%; /* Full width on mobile */
+        margin: 10px 0; /* Adjust margin for mobile */
+        display: block; /* Stack images vertically */
     }
 
     .district-image-container {
@@ -137,7 +136,7 @@ footer {
     }
 
     .district-image {
-        width: 100%;
-        margin-bottom: 10px;
+        width: 100%; /* Full width on mobile */
+        margin: 5px 0; /* Adjust margin for mobile */
     }
 }

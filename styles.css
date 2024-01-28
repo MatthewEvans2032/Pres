@@ -57,16 +57,16 @@ section {
     text-align: center;
     overflow: hidden;
     max-width: 100%;
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    box-sizing: border-box;
 }
 
 .info-image {
-    width: calc(33.333% - 20px); /* Adjust width and account for margin */
+    width: calc(33.333% - 20px); /* Adjust width to account for margin */
     margin: 10px;
     border: 4px solid black;
     display: inline-block;
     vertical-align: top;
-    box-sizing: border-box; /* Include padding and border in the width */
+    box-sizing: border-box; /* Include padding and border in width */
 }
 
 /* Styles for District Images */
@@ -77,12 +77,11 @@ section {
     margin: 20px 0;
     overflow: hidden;
     max-width: 100%;
-    box-sizing: border-box;
 }
 
 .district-image {
     flex: 1 1 auto;
-    max-width: calc(33.333% - 10px); /* Adjust width and account for margin */
+    max-width: calc(33.333% - 10px); /* Adjust width for margin */
     margin: 5px;
     height: auto;
     box-sizing: border-box;

@@ -52,14 +52,32 @@ section {
 
 /* Styles for About Me Images */
 .info-image-section {
-    display: block;
+    border: 4px solid black; /* Thicker border around the entire section */
+    padding: 10px;
+    text-align: center; /* Center the images */
 }
 
 .info-image {
-    width: 100%;
-    margin-bottom: 20px;
-    box-shadow: 0 0 0 3px black; /* Creates a 'border' effect that doesn't affect box size */
-    display: inline-block; /* Necessary for box-shadow to work properly */
+    width: 30%; /* Adjust as needed */
+    margin: 10px;
+    border: 4px solid black; /* Thicker border around each image */
+    display: inline-block; /* Display images in a row */
+    vertical-align: top; /* Align images properly */
+}
+
+/* Styles for District Images */
+.district-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.district-image {
+    flex: 1 1 auto;
+    max-width: 30%; /* Adjust as needed for consistent width */
+    margin: 5px;
+    height: auto;
 }
 
 /* Footer Styles */
@@ -101,27 +119,10 @@ footer {
     margin-right: 5px;
 }
 
-/* District Images Styles */
-.district-image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.district-image {
-    flex: 1 1 auto;
-    max-width: 100%;
-    height: auto;
-    margin: 5px;
-}
-
 /* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
-    .info-image-section {
-        display: block;
-    }
-
     .info-image {
+        width: 100%; /* Full width on mobile */
         margin-bottom: 10px;
     }
 
@@ -130,7 +131,7 @@ footer {
     }
 
     .district-image {
-        width: 100%;
+        width: 100%; /* Full width on mobile */
         margin-bottom: 10px;
     }
 }

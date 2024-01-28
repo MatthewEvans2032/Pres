@@ -7,18 +7,11 @@ body {
     background-attachment: fixed;
 }
 
-.email-banner, header, section, footer {
-    padding-left: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
-}
-
 .email-banner {
     background-color: black;
     color: yellow;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 
 .email-banner a {
@@ -36,84 +29,71 @@ body {
     height: auto;
     border-radius: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 
 header {
     background-color: rgba(0, 71, 171, 0.8);
     color: white;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 h1, h2, p {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 section {
     background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
+/* Optimized Styles for About Me Images */
 .info-image-section {
     text-align: center;
     max-width: 100%;
-    padding: 10px;
     box-sizing: border-box;
 }
 
 .info-image {
-    width: calc(100% - 20px); /* Full width minus margins */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: calc(33.333% - 20px); /* Adjust width considering padding and margins */
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
     box-sizing: border-box;
 }
 
+/* Styles for District Images */
 .district-image-container {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 0;
-    padding-right: 0;
-    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
 }
 
 .district-image {
-    width: calc(100% - 20px); /* Full width minus margins */
-    margin-top: 5px;
-    margin-bottom: 5px;
+    flex: 1 1 auto;
+    max-width: calc(33.333% - 20px);
+    margin: 10px;
+    height: auto;
     box-sizing: border-box;
 }
 
+/* Footer Styles */
 footer {
     background-color: rgba(51, 51, 51, 0.8);
     color: white;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
+/* Social Media Link Styles */
 .social-media-links {
     background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     border-top: 1px solid #ccc;
-    text-align: center;
-    box-sizing: border-box;
 }
 
 .social-media-links p {
@@ -140,14 +120,21 @@ footer {
     margin-right: 5px;
 }
 
+/* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
-    .info-image {
-        width: calc(100% - 20px); /* Adjust for consistent margins */
-        margin: 10px auto; /* Center image with automatic margins */
+    .info-image-section, .district-image-container, section, header, footer {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
-    .district-image-container, .district-image {
-        width: calc(100% - 20px); /* Adjust for consistent margins */
-        margin: 5px auto; /* Center image with automatic margins */
+    .info-image, .district-image {
+        width: 100%; /* Full width for mobile */
+        margin: 10px 0; /* Consistent vertical margin, no horizontal margin */
+    }
+
+    .profile-img, h1, h2, p {
+        width: auto; /* Auto width for text elements */
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

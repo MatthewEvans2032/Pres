@@ -7,11 +7,18 @@ body {
     background-attachment: fixed;
 }
 
+.email-banner, header, section, footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
 .email-banner {
     background-color: black;
     color: yellow;
     text-align: center;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .email-banner a {
@@ -29,74 +36,84 @@ body {
     height: auto;
     border-radius: 50%;
     display: block;
-    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 header {
     background-color: rgba(0, 71, 171, 0.8);
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 h1, h2, p {
-    margin: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 section {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin: 20px 0;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-/* Styles for About Me Images */
 .info-image-section {
-    padding: 10px;
     text-align: center;
     max-width: 100%;
+    padding: 10px;
     box-sizing: border-box;
 }
 
 .info-image {
-    width: calc(33.333% - 24px); /* Adjust width considering margin and border */
-    margin: 10px;
-    border: 2px solid black; /* Adding border to each image */
-    display: inline-block;
-    vertical-align: top;
+    width: calc(100% - 20px); /* Full width minus margins */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     box-sizing: border-box;
 }
 
-/* Styles for District Images */
 .district-image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 0;
-    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
 }
 
 .district-image {
-    flex: 1 1 auto;
-    max-width: calc(33.333% - 10px);
-    margin: 5px;
-    height: auto;
+    width: calc(100% - 20px); /* Full width minus margins */
+    margin-top: 5px;
+    margin-bottom: 5px;
     box-sizing: border-box;
 }
 
-/* Footer Styles */
 footer {
     background-color: rgba(51, 51, 51, 0.8);
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/* Social Media Link Styles */
 .social-media-links {
     background-color: white;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-top: 1px solid #ccc;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .social-media-links p {
@@ -123,29 +140,14 @@ footer {
     margin-right: 5px;
 }
 
-/* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
     .info-image {
-        width: calc(100% - 24px); /* Full width on mobile minus margins */
-        margin: 10px; /* Adjust margin for mobile */
-        display: block; /* Stack images vertically */
-        box-sizing: border-box;
+        width: calc(100% - 20px); /* Adjust for consistent margins */
+        margin: 10px auto; /* Center image with automatic margins */
     }
 
-    .district-image-container, .district-image, section, header, .email-banner, footer {
-        width: 100%; /* Expanding sections to full width */
-        box-sizing: border-box;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .district-image {
-        width: 100%; /* Full width for district images on mobile */
-        margin: 5px 0; /* Adjust margin for mobile */
-    }
-
-    body, .email-banner, header, section, footer {
-        padding-left: 10px; /* Adding padding for consistency */
-        padding-right: 10px;
+    .district-image-container, .district-image {
+        width: calc(100% - 20px); /* Adjust for consistent margins */
+        margin: 5px auto; /* Center image with automatic margins */
     }
 }

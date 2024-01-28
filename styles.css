@@ -52,17 +52,20 @@ section {
 
 /* Styles for About Me Images */
 .info-image-section {
-    border: 4px solid black; /* Thicker border around the entire section */
+    border: 4px solid black;
     padding: 10px;
-    text-align: center; /* Center the images */
+    text-align: center;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .info-image {
-    width: 30%; /* Adjust as needed */
+    width: 30%;
     margin: 10px;
-    border: 4px solid black; /* Thicker border around each image */
-    display: inline-block; /* Display images in a row */
-    vertical-align: top; /* Align images properly */
+    border: 4px solid black;
+    display: inline-block;
+    vertical-align: top;
+    max-width: calc(100% / 3 - 20px);
 }
 
 /* Styles for District Images */
@@ -71,13 +74,16 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .district-image {
     flex: 1 1 auto;
-    max-width: 30%; /* Adjust as needed for consistent width */
+    max-width: 30%;
     margin: 5px;
     height: auto;
+    max-width: calc(100% / 3 - 10px);
 }
 
 /* Footer Styles */
@@ -90,13 +96,13 @@ footer {
 
 /* Social Media Link Styles */
 .social-media-links {
-    background-color: white; /* White background for social media links section */
+    background-color: white;
     padding: 20px 0;
-    border-top: 1px solid #ccc; /* Separator - if needed */
+    border-top: 1px solid #ccc;
 }
 
 .social-media-links p {
-    color: #333; /* Dark text color for contrast on white background */
+    color: #333;
     display: inline;
     margin-right: 10px;
 }
@@ -122,7 +128,7 @@ footer {
 /* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
     .info-image {
-        width: 100%; /* Full width on mobile */
+        width: 100%;
         margin-bottom: 10px;
     }
 
@@ -131,7 +137,7 @@ footer {
     }
 
     .district-image {
-        width: 100%; /* Full width on mobile */
+        width: 100%;
         margin-bottom: 10px;
     }
 }

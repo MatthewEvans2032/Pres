@@ -60,12 +60,12 @@ section {
 }
 
 .info-image {
-    width: calc(33.333% - 28px); /* Adjusted width to include borders and margins */
+    max-width: calc(33.333% - 28px); /* Using max-width for flexible sizing */
+    height: auto; /* Maintain aspect ratio */
     margin: 10px;
     border: 4px solid black;
     display: inline-block;
     vertical-align: top;
-    box-sizing: border-box;
 }
 
 /* Styles for District Images */
@@ -125,9 +125,9 @@ footer {
 /* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
     .info-image {
-        width: 100%;
+        max-width: 100%; /* Allow images to shrink on mobile */
         margin: 10px 0;
-        display: block;
+        display: block; /* Stack images vertically on mobile */
     }
 
     .district-image-container {

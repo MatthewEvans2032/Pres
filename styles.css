@@ -152,4 +152,18 @@ footer {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .professional-experience-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.professional-experience-link a {
+    color: #0044cc; /* or any color you prefer */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.professional-experience-link a:hover {
+    text-decoration: underline;
+}
 }
